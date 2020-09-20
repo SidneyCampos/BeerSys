@@ -1,6 +1,6 @@
-﻿namespace BeerSys
+﻿namespace BeerSys.Forms
 {
-    partial class Form1
+    partial class FormVenda
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVenda));
+            this.SuspendLayout();
+            // 
+            // FormVenda
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.DoubleBuffered = true;
+            this.Name = "FormVenda";
+            this.Text = "VENDA";
+            this.Load += new System.EventHandler(this.FormVenda_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-
