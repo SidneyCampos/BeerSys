@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEstoque));
             this.lblTest3 = new System.Windows.Forms.Label();
             this.lblTest4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTest3
@@ -53,6 +54,15 @@
             this.lblTest4.TabIndex = 1;
             this.lblTest4.Text = "COR SECUNDARIA";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(509, 222);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "label1";
+            // 
             // FormEstoque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -60,6 +70,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTest4);
             this.Controls.Add(this.lblTest3);
             this.DoubleBuffered = true;
@@ -75,5 +86,6 @@
 
         private System.Windows.Forms.Label lblTest3;
         private System.Windows.Forms.Label lblTest4;
+        private System.Windows.Forms.Label label1;
     }
 }
